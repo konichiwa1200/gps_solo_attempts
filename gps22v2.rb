@@ -15,12 +15,12 @@ def add_update_items_to_list(item, quantity)
 end
 
 def make_list
-	puts "How many items do you want to add to your grocery list?"
-	quantity_of_items = gets.chomp.to_i
+	puts "How many items do you want to add to your grocery list? "
+	quantity_of_items = gets.to_i
 
 	if quantity_of_items > 0
 		(1..quantity_of_items).each do |element|
-			puts "What item would you like to add to your list?"
+			puts "What item would you like to add to your list? "
 			item = gets.chomp
 
 			puts "Quantity:"
